@@ -15,6 +15,5 @@ public class Cliente {
         return nomeCompleto.toUpperCase();
     }
 
-    // Getters para exibição no relatório
     public int getMesa() { return mesa; }
 }

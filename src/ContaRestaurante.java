@@ -24,7 +24,6 @@ public class ContaRestaurante {
 
     public double calcularDesconto() {
         String primeiroNome = cliente.getPrimeiroNome().toUpperCase();
-        // Verifica se começa com 'A'
         if (primeiroNome.startsWith("A")) {
             return 15.00;
         }
@@ -42,7 +41,6 @@ public class ContaRestaurante {
         System.out.println("Mesa: " + cliente.getMesa());
         System.out.println("\nPedidos:");
 
-        // Uso do laço for com um array temporário para cumprir o requisito
         Pedido[] pedidos = {p1, p2, p3};
         for (int i = 0; i < pedidos.length; i++) {
             System.out.printf("%d - %s | Qtd: %d | Total: R$ %.2f%n",
